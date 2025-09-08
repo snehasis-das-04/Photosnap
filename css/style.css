@@ -1,0 +1,92 @@
+@import "utilities.css";
+
+:root {
+	--black: #000000;
+	--grey: #dfdfdf;
+	--white: #ffffff;
+	--orange-light: #ffc593;
+	--pink-desat: #bc7198;
+	--blue-light: #5a77ff;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: DM Sans, sans-serif;
+}
+header {
+	background: var(--black);
+}
+header nav {
+	background: var(--white);
+}
+.head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 18px 80px;
+}
+.head .text {
+	display: flex;
+	text-align: center;
+}
+.head .text li {
+	padding: 0 20px;
+	list-style: none;
+}
+.head .text a {
+	text-decoration: none;
+	color: var(--black);
+	font-size: 0.7rem;
+	font-weight: 900;
+}
+.head .btn {
+	padding: 0.6rem 2rem;
+	font-weight: 600;
+	font-size: 0.9rem;
+	border: 1px solid transparent;
+	background: var(--black);
+	color: var(--white);
+	cursor: pointer;
+	outline: none;
+}
+.head .btn:hover {
+	background: transparent;
+	background: var(--grey);
+	color: var(--black);
+}
+
+.hero {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch; /* vertically center */
+	/* padding: 20px 80px; */
+	 height: 100vh; 
+}
+
+.hero .left {
+	flex: 1;
+	  /* padding: 200px 8px;  */
+}
+
+.hero .right {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.hero .right img {
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+	
+}
+.hero .left h1{
+	color: var(--white);
+}
+.hero .left p{
+	color: var(--white);
+}
+.hero .left a{
+	color: var(--white);
+}
