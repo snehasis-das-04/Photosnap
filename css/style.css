@@ -4,6 +4,7 @@
 	--black: #000000;
 	--grey: #dfdfdf;
 	--white: #ffffff;
+	--dark-gray: #404040;
 	--orange-light: #ffc593;
 	--pink-desat: #bc7198;
 	--blue-light: #5a77ff;
@@ -24,11 +25,17 @@ header nav {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 18px 80px;
+	padding: 15px 80px;
 }
 .head .text {
 	display: flex;
 	text-align: center;
+	text-transform: uppercase;
+}
+.head .text a:hover {
+	color: var(--grey);
+	background: transparent;
+	transform: scale(1.1);
 }
 .head .text li {
 	padding: 0 20px;
@@ -37,18 +44,21 @@ header nav {
 .head .text a {
 	text-decoration: none;
 	color: var(--black);
-	font-size: 0.7rem;
+	font-size: 0.8rem;
 	font-weight: 900;
+	letter-spacing: 2px;
 }
 .head .btn {
-	padding: 0.6rem 2rem;
+	padding: 0.6rem 1rem;
 	font-weight: 600;
-	font-size: 0.9rem;
+	font-size: 0.8rem;
 	border: 1px solid transparent;
 	background: var(--black);
 	color: var(--white);
 	cursor: pointer;
 	outline: none;
+	transition: all 0.3s ease;
+	letter-spacing: 2px;
 }
 .head .btn:hover {
 	background: transparent;
@@ -58,35 +68,100 @@ header nav {
 
 .hero {
 	display: flex;
-	justify-content: space-between;
-	align-items: stretch; /* vertically center */
-	/* padding: 20px 80px; */
-	 height: 100vh; 
+	height: 90vh;
 }
 
 .hero .left {
-	flex: 1;
-	  /* padding: 200px 8px;  */
-}
-
-.hero .right {
-	flex: 1;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
 }
-
+.hero .left .left-content {
+	width: 50%;
+	gap: 20px;
+	display: flex;
+	flex-direction: column;
+}
+.hero .right {
+	width: 110%;
+}
 .hero .right img {
-	max-width: 100%;
-	height: auto;
-	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+.hero .left h1 {
+	color: var(--white);
+	font-size: 2.5rem;
+	font-weight: 700;
+	letter-spacing: 0.3rem;
+	text-transform: uppercase;
+}
+.hero .left .left-content p {
+	color: var(--grey);
+}
+.hero .left a {
+	color: var(--white);
+	font-size: 0.8rem;
+	font-weight: 700;
+	letter-spacing: 0.1rem;
+	text-decoration: none;
+}
+.hero .left a:hover {
+	border-bottom: 1px solid var(--white);
+}
+.for {
+	background: var(--white);
+}
+.hero .left .color h1 {
+	color: var(--black);
+}
+.hero .left .color p {
+	color: var(--dark-gray);
+}
+.hero .left .color a {
+	color: var(--black);
+}
+section.card-wrapper {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	/* width: 100%; */
+}
+section.card-wrapper .card {
+	position: relative;
+}
+section.card-wrapper .card img {
+	width: 100%;
+	height: 500px;
+}
+section.card-wrapper .card .card-text {
+	position: absolute;
+	bottom: 0;
+	/* left: 0; */
+	color: var(--white);
+	padding: 2rem;
+	width: 100%;
+	/* background: linear-gradient(to top,rgba(0,0,0,0.5),rgba(0,0,0,0.2)); */
+}
+section.card-wrapper .card .card-text h1 {
+	font-size: 1.3rem;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+}
+section.card-wrapper .card .card-text h2 {
+	font-size: 0.8rem;
+	font-weight: 300;
+	margin-bottom: 1.5rem;
+	border-bottom: 1px solid var(--dark-gray);
+	width: 100%;
+	padding-bottom: 1.4rem;
 	
 }
-.hero .left h1{
+section.card-wrapper .card .card-text a {
 	color: var(--white);
-}
-.hero .left p{
-	color: var(--white);
-}
-.hero .left a{
-	color: var(--white);
+	letter-spacing: 0.1rem;
+	font-size: 0.8rem;
+	font-weight: 800;
+	text-decoration: none;
+	text-transform: uppercase;
 }
