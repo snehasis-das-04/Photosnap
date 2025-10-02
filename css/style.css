@@ -155,7 +155,6 @@ section.card-wrapper .card .card-text h2 {
 	border-bottom: 1px solid var(--dark-gray);
 	width: 100%;
 	padding-bottom: 1.4rem;
-	
 }
 section.card-wrapper .card .card-text a {
 	color: var(--white);
@@ -164,4 +163,88 @@ section.card-wrapper .card .card-text a {
 	font-weight: 800;
 	text-decoration: none;
 	text-transform: uppercase;
+}
+section.services {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+}
+section.services .cards {
+	align-items: center;
+	margin: 3rem 4rem;
+}
+section.services .cards img {
+	align-items: center;
+	margin: 5rem 9rem;
+	height: 60px;
+	width: 100px;
+	object-fit: contain;
+}
+section.services .cards .texts {
+	text-align: center;
+}
+section.services .cards h1 {
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+section.services .cards p {
+	font-size: 1rem;
+	font-weight: 300;
+	color: #666666;
+}
+footer {
+	background: var(--black);
+}
+footer .main {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+	padding: 4rem 9rem;
+}
+footer .flex-1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 150px;
+}
+footer .flex-2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 150px;
+}
+footer .footer-logo {
+	/* height: 20%; */
+	width: 40%;
+}
+footer .footer-text ul {
+	display: grid;
+	grid-gap: 1.5rem;
+}
+footer .footer-text a {
+	color: var(--white);
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	font-size: 0.8rem;
+	font-weight: 900;
+}
+footer .footer-invite a {
+	color: var(--white);
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	font-size: 0.8rem;
+	font-weight: 900;
+}
+footer .copyright p {
+	color: #808080;
+	font-size: 0.9rem;
+	font-weight: 500;
+}
+footer .footer-socials {
+	
+}
+footer .footer-socials a {
+	color: var(--white);
 }
