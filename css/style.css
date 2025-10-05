@@ -125,14 +125,14 @@ header nav {
 section.card-wrapper {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	/* width: 100%; */
 }
 section.card-wrapper .card {
 	position: relative;
+	height: 500px;
 }
 section.card-wrapper .card img {
 	width: 100%;
-	height: 500px;
+	height: 100%;
 }
 section.card-wrapper .card .card-text {
 	position: absolute;
@@ -243,8 +243,66 @@ footer .copyright p {
 	font-weight: 500;
 }
 footer .footer-socials {
-	
 }
 footer .footer-socials a {
 	color: var(--white);
+}
+
+/* Stories.html */
+
+section.stories-hero {
+	background: url(../assets/mooon.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 92vh;
+	display: flex;
+	align-items: center;
+}
+section.stories-hero .story-text {
+	width: 40%;
+	padding-left: 7rem;
+}
+section.stories-hero .story-text h2 {
+	font-size: 0.8rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: var(--white);
+	padding-bottom: 2rem;
+}
+section.stories-hero .story-text h1 {
+	color: var(--white);
+	font-size: 2.6rem;
+	font-weight: 700;
+	letter-spacing: 0.3rem;
+	text-transform: uppercase;
+	padding-bottom: 1rem;
+}
+section.stories-hero .story-text h3 {
+	color: #c3cad0;
+	font-size: 1rem;
+	font-weight: 400;
+	padding-bottom: 2rem;
+}
+section.stories-hero .story-text h3 span {
+	color: var(--white);
+}
+section.stories-hero .story-text p {
+	color: #c3cad0;
+	font-size: 1rem;
+	font-weight: 400;
+	padding-bottom: 2rem;
+}
+section.stories-hero .story-text a {
+	color: var(--white);
+	text-decoration: none;
+	font-size: 0.8rem;
+	font-weight: 800;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+}
+section.card-wrapper .one {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	/* width: 100%; */
 }
